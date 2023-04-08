@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns Nay</title>
+    <style>
+        body {
+            background-color: rgb(175, 61, 61);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .heart {
+            font-size: 10rem;
+            animation: heart .5s infinite alternate linear;
+        }
+        @keyframes heart {
+            from {
+                transform: scale(.9);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+        .msg {
+            color: turquoise;
+            align-items: flex-start;
+            animation: rotate 5ps infinite alternate linear;
+        }
+        @keyframes msg {
+            from {
+                transform:rotate(0.5);
+            }
+            to {
+                transform: rotate(1);
+            }
+        }
+        .text {
+            color: rgb(255, 255, 255);
+            background-color: rgb(175, 61, 61);
+            font-size: 15px;
+            animation: animText .5s infinite alternate linear;
+        }
+        @keyframes animText {
+            from {
+                transform: scale(.9);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <table border="0" align="center">
+        <tr><td><div class="heart" align="center" >❤️</div></td></tr>
+        <tr><td><div class="msg" align="center">Parabéns Nay, Feliz 17</div><br></td></tr>
+        <tr><td><label align="center "class="msg" for="msgvc">O que eu acho de você: </label><br>
+            <select class="text" name="select" id="msgvc" size="1">
+                <option align="center" value="click" selected>Click Aqui❤️</option>
+                <option align="center" value="vestido">❤️19 pra cima é foda sabia❤️</option>
+                <option align="center" value="smart">❤️Inteligente❤️</option>
+                <option align="center" value="beautiful">❤️Linda❤️</option>
+                <option align="center" value="notHoly">❤️Não é Santa❤️</option>
+                <option align="center" value="perfect">❤️Perfeita❤️</option>
+            </select>
+        </td></tr>
+    </table>
+</body>
+</html>
